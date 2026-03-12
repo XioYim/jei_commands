@@ -1,0 +1,80 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="jei_commands"
+version="${mod_version}"
+displayName="JEI Commands"
+logoFile="logo.png"
+displayURL="https://modrinth.com/project/jei_commands"
+authors="B站@小逸檬"
+description='''
+Adds commands to open JEI recipe, usage, and effect views directly.
+
+Commands:
+/jeiitemr <item>   - Open recipe/source view (R key)
+/jeiitemu <item>   - Open usage/work view (U key)
+/jeiiteme <effect> - Open JEED effect description page
+
+Example (click /tellraw to execute command):
+Successfully obtained a rare item [Diamond] - Click to view source
+Congratulations on obtaining a rare item [Next Alloy Ingot] - Click to view usage
+
+--------------------------------------------
+
+为 JEI 添加命令，可直接打开配方、用法和效果界面。
+
+命令：
+/jeiitemr <物品> — 打开配方/来源界面（R 键）
+/jeiitemu <物品> — 打开用途/加工界面（U 键）
+/jeiiteme <效果> — 打开 JEED 效果描述页面
+
+示例（点击 /tellraw 执行命令）：
+成功获得稀有物品 [钻石] - 点击查看来源
+恭喜获得稀有物品 [下届合金锭] - 点击查看用途
+'''
+
+[[dependencies.jei_commands]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.jei_commands]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.jei_commands]]
+modId="jei"
+mandatory=true
+versionRange="[15,)"
+ordering="NONE"
+side="BOTH"
+
+# Optional compatibility mods
+
+[[dependencies.jei_commands]]
+modId="jeresources"
+mandatory=false
+versionRange="[1.4,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.jei_commands]]
+modId="jeed"
+mandatory=false
+versionRange="[1.20-2.2,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.jei_commands]]
+modId="advancedlootinfo"
+mandatory=false
+versionRange="[1.3,)"
+ordering="NONE"
+side="BOTH"
